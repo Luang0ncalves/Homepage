@@ -3,6 +3,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to left, #67645e,#222278);
 }
+html {
+  scroll-behavior:smooth;
+}
 
 .principal {
   text-align: center;
@@ -14,6 +17,17 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .conteudo h3{
@@ -34,9 +48,6 @@ body {
   text-transform: capitalize;
 }
 
-html {
-  scroll-behavior:smooth;
-}
 
 header a:hover {
     color:  rgba( 0,0,255);
@@ -73,7 +84,7 @@ section p a:hover {
 }
 
 footer{
-  text-align: center;
+  text-align: center;Luan
   padding-top: 45px;
   padding-bottom: 15px;
 }
@@ -83,17 +94,36 @@ footer{
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
   .conteudo {
     flex-wrap:  wrap-reverse;
+    font-size:2em;
+    justify-content: center;
   }
+  .btn {
+    font-size: 0.5em;
+  }
+
+  .item {
+    align-self:   center;
+    justify-items:  center;
+    justify-content:  center;
+  }
+
   .item1 {
     align-self:   center;
     justify-items:  center;
     justify-content:  center;
    }
+   .skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.5em;
+    justify-content: center;
+   }  
+
 }
  
-
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   h1 {
@@ -104,16 +134,15 @@ footer{
     justify-content:  center  ;
   }
 }
-}
+
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   h1 {
     font-size: 4em;
   }
-   .conteudo {
-    flex-wrap:  wrap-reverse ;
-    justify-content:  center ;
+   .skills {
+    justify-content: space-between;
   }
   
 }
@@ -123,6 +152,9 @@ footer{
   h1 {
     font-size: 5em;
   }
+  .skills {
+    justify-content:  space-between;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -130,5 +162,7 @@ footer{
   h1 {
     font-size: 6em;
   }
-  
+  .skills {
+    justify-content:  space-between;
+  }
 }

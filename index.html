@@ -27,7 +27,11 @@
           <a href="index.html" class="navbar-brand">Luan Gonçalves
             <i class="fa-solid fa-chalkboard-user"></i>
           </a>
-            <ul class="navbar-nav ml-auto justify-content-end">
+           <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+           <div class="collapse navbar-collapse" id="nav-target">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a href="#ancora" class="nav-link text-white">Perfil</a>
               </li>
@@ -43,26 +47,36 @@
             </ul>
      </header> <!--Fim do Cabeçalho-->
       <section class="p-3">
-        <div class="conteudo"> <!--início d-flex-->
+        <div class="conteudo"> <!--início do conteudo-->
           <div class="item1 p-5">
             <h1 class="display-4">Olá, meu nome é Luan Gonçalves e sou desenvolvedor front-end</h1>
               <h3 class="p-3">Seja muito bem-vindo(a) ao meu site!</h3> 
-              <div class="p-3">
-                <a href="https://www.linkedin.com/in/luangoncalvess" class="btn btn-md">
-                  <i class="item fa-brands fa-linkedin">  Linkedin</i>   
-                </a>
-                <a href="https://github.com/Luang0ncalves" class="btn btn-md">
-                  <i class="item fa-brands fa-github">  Projetos</i> 
-                </a>
+              <div class="redes p-3"> <!-- inicio redes-->
+                <div class="item">
+                  <a href="https://www.linkedin.com/in/luangoncalvess" class="btn btn-md">
+                    <i class="item fa-brands fa-linkedin">  Linkedin</i>   
+                  </a>
+                </div> 
+                <div class="item">  
+                  <a href="https://github.com/Luang0ncalves" class="btn btn-md">
+                    <i class="item fa-brands fa-github">  Projetos</i> 
+                  </a>
+                </div>
+                <div class="item">  
                   <a href="https://bit.ly/45UOf3T" class="btn btn-md ">
                     <i class="item fa-solid fa-phone">  Contato</i>
                   </a>
+                </div>
+                <div class="item">
                   <a href="mailto:luan.souza.goncalves@gmail.com" class="btn btn-md">
                     <i class="item fa-solid fa-inbox">  E-mail</i>
                   </a>
+                </div> 
+                <div class="item"> 
                   <a href="https://drive.google.com/file/d/1uEsfB-7nFcxzSpHI4Zssg3u8Gn6TPFQ1/view?usp=sharing" class="btn btn-md">
                     <i class="item fa-solid fa-folder-open">  CV</i>
                   </a>
+                </div>
               </div>            
           </div>
                             <!-- style="border:1px solid blue;"-->
@@ -70,7 +84,7 @@
             <img class="rounded-circle" src="img/imagem1.jpeg" width="242">
           </div>
 
-        </div> <!--fim d-flex-->
+        </div> <!--fim do conteudo-->
       </section>
       
 
@@ -88,14 +102,12 @@
      <section class="principal" id="ancora1"> <!--Início da seção Skills-->
         <div class="container p-3 mb-3">
           <h3>Skills</h3>
-          <div class="d-flex justify-content-around">
-            <img src="img/javascript-logo-1.png" class="img-fluid" width="142"> 
-            <img src="img/logo-css-3-2048.png" class="img-fluid" width="142"> 
-            <img src="img/html5-logo-2.png" class="img-fluid" width="142" > 
-            <img src="img/th.jpg" class="img-fluid" width="142">          
-            
+          <div class="skills">
+            <div class="item"><img src="img/javascript-logo-1.png" class="img-fluid" width="142"></div>            
+            <div class="item"><img src="img/logo-css-3-2048.png" class="img-fluid" width="142"></div>
+            <div class="item"><img src="img/html5-logo-2.png" class="img-fluid" width="142"></div>
+            <div class="item"><img src="img/th.jpg" class="img-fluid" width="142"></div>
           </div>
-        </div>
       </section> <!--fim da seção Skills-->
 
       <section class="principal" id="ancora2"> 
